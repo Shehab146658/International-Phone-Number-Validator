@@ -1,0 +1,33 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Phone Numbers List</h2>
+    </div>
+    <div class="panel-body">
+      <table id="example" class="table table-striped table-bordered table-sm row-border hover" cellspacing="0" width="100%">
+
+        <thead>
+          <tr>
+            <th >Country</th>
+            <th >State</th>
+            <th >Country Code</th>
+            <th >Phone</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of employees | async">
+            <td align="middle">{{employee.country}}</td>
+            <td align="middle">{{employee.state}}</td>
+            <td align="middle">{{employee.countryCode}}</td>
+            <td align="middle">{{employee.phone}}</td>
+            <td align="middle">{{employee.name}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+    
+    
